@@ -1,0 +1,23 @@
+<table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Email</th>
+        <th scope="col">Name</th>
+        <th scope="col">Favorite_Genre</th>
+        <th scope="col">Ocupation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% for(var i=0; i < results.length; i++) { %>
+            <tr>
+                <td><%= results[i].ID %></td>
+                <td><%= results[i].Email %></td>
+                <td><%= results[i].Name %></td>
+                <td><%= results[i].Favorite_Genre %></td>
+                <td><%= results[i].Ocupation %></td>
+            </tr>
+        
+        <%} %>
+    </tbody>
+</table>
